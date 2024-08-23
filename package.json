@@ -1,10 +1,13 @@
 {
+  "homepage": "https://pari5313.github.io/worldwise",
   "name": "worldwise",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview",
     "server": "json-server --watch data/cities.json --port 8000 --delay 500"
